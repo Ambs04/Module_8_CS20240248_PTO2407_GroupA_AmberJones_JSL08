@@ -9,9 +9,11 @@ class BankBranch {
   constructor(branchInfo) {
     //- Inside the constructor, check if the `bankBranchInstance` variable is null (indicating no instance exists).
     if (bankBranchInstance === null) {
+      //- If `bankBranchInstance` is null, create a new instance with the provided `branchInfo` and assign it to `bankBranchInstance`.
+      this.branchInfo = branchInfo;
+      BankBranch.bankBranchInstance = this;
     }
   }
-  //- If `bankBranchInstance` is null, create a new instance with the provided `branchInfo` and assign it to `bankBranchInstance`.
   //    - Return the `bankBranchInstance` whether it's newly created or existing.
 
   // 4. Add methods to the `BankBranch` class for managing branch-related information. For example, you can add a method like `getBranchInfo` to retrieve branch details.
