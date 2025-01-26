@@ -21,8 +21,14 @@ class BankBranch {
     return this.branchInfo;
   }
 }
+
 // 5. In the usage section:
 //    - Create instances of the `BankBranch` class, such as `branchA` and `branchB`, with different branch information.
+//Instance 1
+const branchA = new BankBranch({
+  name: "FNB",
+  address: "123 Blue Street",
+});
 //    - Use the `getBranchInfo` method to retrieve branch information from the instances.
 //    - Verify that `branchA` and `branchB` are both referring to the same instance by comparing them using `===`.
 
