@@ -32,8 +32,8 @@ const branchA = new BankBranch({
 
 //Instance 2
 const branchB = new BankBranch({
-  name: "FNB",
-  address: "123 Blue Street",
+  name: "ABSA",
+  address: "432 Red Road",
 });
 
 const branchC = new BankBranch({
