@@ -36,6 +36,11 @@ const branchB = new BankBranch({
   address: "123 Blue Street",
 });
 
+const branchC = new BankBranch({
+  name: "FNB",
+  address: "123 Blue Street",
+});
+
 //    - Use the `getBranchInfo` method to retrieve branch information from the instances.
 //    - Verify that `branchA` and `branchB` are both referring to the same instance by comparing them using `===`.
 
