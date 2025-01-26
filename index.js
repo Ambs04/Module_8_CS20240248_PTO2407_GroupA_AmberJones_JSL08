@@ -30,6 +30,8 @@ const branchA = new BankBranch({
   address: "123 Blue Street",
 });
 
+console.log(branchA.getBranchInfo());
+
 //Instance 2
 const branchB = new BankBranch({
   name: "ABSA",
