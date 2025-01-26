@@ -38,6 +38,15 @@ const branchB = new BankBranch({
   address: "432 Red Road",
 });
 
+//    - Verify that `branchA` and `branchB` are both referring to the same instance by comparing them using `===`.
+
+if (branchB.getBranchInfo() === branchA.getBranchInfo()) {
+  console.log("This instance already exists!");
+} else {
+  console.log(branchB.getBranchInfo());
+}
+
+//Instance 3
 const branchC = new BankBranch({
   name: "FNB",
   address: "123 Blue Street",
