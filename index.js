@@ -38,6 +38,7 @@ const branchB = new BankBranch({
   address: "432 Red Road",
 });
 
+//    - Use the `getBranchInfo` method to retrieve branch information from the instances.
 //    - Verify that `branchA` and `branchB` are both referring to the same instance by comparing them using `===`.
 
 if (branchB.getBranchInfo() === branchA.getBranchInfo()) {
@@ -52,8 +53,13 @@ const branchC = new BankBranch({
   address: "123 Blue Street",
 });
 
-//    - Use the `getBranchInfo` method to retrieve branch information from the instances.
-//    - Verify that `branchA` and `branchB` are both referring to the same instance by comparing them using `===`.
+//    - Verify that `branchA` and `branchC` are both referring to the same instance by comparing them using `===`.
+
+if (branchC.getBranchInfo() === branchA.getBranchInfo()) {
+  console.log("This instance already exists!");
+} else {
+  console.log(branchC.getBranchInfo());
+}
 
 // This pseudo-code provides a step-by-step explanation of how to implement the Singleton Pattern for managing a single instance of the `BankBranch` class throughout the application, ensuring that multiple instances refer to the same object.
 
